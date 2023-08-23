@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Aclonica&family=Archivo+Black&family=Belgrano&family=Londrina+Solid:wght@400;900&display=swap");
+
+/* font-family: 'ADLaM Display', cursive; */
+/* font-family: 'Archivo Black', sans-serif; */
+/* font-family: 'Belgrano', serif; */
+/* font-family: 'Aclonica', sans-serif; */
+/* font-family: 'Londrina Solid', cursive; two weight */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -4%);
+}
+
+nav > ul {
+  height: 5.5rem;
+  font-size: 2rem;
+  font-family: "Belgrano", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+}
+
+nav a {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0 1.5rem;
+  text-decoration: none;
+}
+
+.navOverlay {
+  width: 105%;
+  height: 100%;
+  background-color: #e6edf3ff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  position: absolute;
+  top: 0%;
+  left: -2.5%;
+  z-index: -1;
+}
+
+.bgColorCircle {
+  height: 120rem;
+  width: 120rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  background-color: rgba(88, 182, 253, 0.277);
+  border-radius: 50%;
+  filter: blur(100px);
+  animation-delay: 2s;
+}
+
+@media (width < 1100px) {
+  .bgColorCircle {
+    height: 100rem;
+    width: 100rem;
+  }
+}
+
+@media (width < 800px) {
+  .bgColorCircle {
+    height: 90rem;
+    width: 90rem;
+  }
+}
+
+@media (width < 550px) {
+  .bgColorCircle {
+    height: 70rem;
+    width: 70rem;
+    top: -5%;
+    transform: translate(-50%, -0%);
+    background-color: rgba(88, 182, 253, 0.4);
+    filter: blur(80px);
+  }
+  nav a {
+    padding: 0 0.7rem;
+  }
+
+  nav > ul {
+    height: 4.8rem;
+    font-size: 1.4rem;
+  }
+
+  .navOverlay {
+    width: 102%;
+    left: -1%;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,207 @@
+.projectContainer {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #141414;
+  color: white;
+  overflow: hidden;
+}
+
+.projectTextContainer {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.projectTextContainer [class^="swiper-button-"]::after {
+  font-size: 30px;
+  color: yellow;
+}
+
+.mySwiper {
+  width: 75vw;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  background-color: #141414;
+  outline: 2px solid white;
+}
+
+.outerContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.outerContainer > img {
+  width: 100%;
+}
+
+.outerContainer > h2 {
+  height: 100%;
+  width: 100%;
+  font-family: "Aclonica", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  font-size: 5.5rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: yellow;
+  opacity: 0;
+  transition: 300ms ease-in;
+}
+
+.outerContainer:hover > h2 {
+  opacity: 1;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.4);
+}
+
+.clickDivBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+}
+.navBgColor {
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+.clickDiv {
+  max-height: 60vh;
+  width: 60rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 1rem;
+  background-color: #141414;
+  border-radius: 10px;
+  overflow: scroll;
+  outline: 2px solid white;
+}
+
+.fa-circle-xmark {
+  position: absolute;
+  z-index: 5;
+  top: 4%;
+  right: 4%;
+  font-size: 3.5rem;
+  background-color: black;
+  outline: 1px solid black;
+  border-radius: 50%;
+  transition: 200ms ease;
+}
+
+.fa-circle-xmark:active {
+  transform: scale(0.95);
+}
+
+.clickDiv::-webkit-scrollbar {
+  width: 0rem;
+  height: 0rem;
+}
+
+.clickDiv > h2 {
+  margin-top: 2rem;
+  font-family: "ADLaM Display", cursive;
+  font-size: 4rem;
+  display: grid;
+  place-items: center;
+  color: yellow;
+}
+
+.clickDiv > p {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.clickDiv > ul {
+  margin-top: 3rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: yellow;
+  font-size: 2rem;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.clickDiv > ul > span {
+  text-align: center;
+}
+
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.clickDiv > ul > .lists > li {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+  color: white;
+}
+
+.clickDiv > ul > .lists > li:hover {
+  transition: 0.2s ease;
+  border: 1px solid yellow;
+}
+.clickDiv > video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.liveLink,
+.githubRepo {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  font-family: "Archivo Black", sans-serif;
+  color: yellow;
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.liveLink > a,
+.githubRepo > a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+.liveLink > a::after,
+.githubRepo > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: yellow;
+  transition: 0.2s ease;
+}
+
+.liveLink > a:hover::after,
+.githubRepo > a:hover::after {
+  width: 100%;
+}
