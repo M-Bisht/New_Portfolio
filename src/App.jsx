@@ -4,7 +4,7 @@ import Home from "./pages/home/Home";
 import Project from "./pages/projects/Project";
 const App = () => {
   return (
-    <Main>
+    <Main basename="/New_Portfolio">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/project" element={<Project />} />
