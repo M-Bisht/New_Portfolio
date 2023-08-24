@@ -81,9 +81,9 @@ const Nav = () => {
     <nav>
       <ul ref={navUlRef}>
         <Link to="/">Home</Link>
-        <Link to="project">Projects</Link>
-        <Link to="/">About Me</Link>
-        <Link to="/">Contact Me</Link>
+        <Link to="/Project">Projects</Link>
+        <Link to="/About">About Me</Link>
+        <Link to="/Contact">Contact Me</Link>
         <div ref={navOverlayRef} className="navOverlay"></div>
       </ul>
     </nav>

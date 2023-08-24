@@ -1,0 +1,237 @@
+.contactContainer {
+  min-height: 70rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #eae5e6ff;
+  padding: 2rem 2rem;
+}
+
+.formContainer {
+  width: 85rem;
+  height: 40rem;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.formContainer > form {
+  width: 65%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  background-color: white;
+}
+
+.formDivs input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem 0.1rem 0rem 0.5rem;
+}
+
+.formDiv1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.formDiv1 > span {
+  font-family: "Russo One", sans-serif;
+  font-size: 2.2rem;
+}
+
+.formDiv1 > i {
+  color: #bb071bff;
+  font-size: 2.5rem;
+  padding-right: 2rem;
+}
+
+.formDiv2 {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.formDiv2 > input {
+  width: 47%;
+}
+
+.formDiv3 {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.formDiv3 > input {
+  width: 47%;
+}
+
+.formDiv4 {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.formDiv4 > input:nth-child(1) {
+  height: 5rem;
+}
+.formDiv4 > input:nth-child(2) {
+  height: 5rem;
+  margin-top: 2rem;
+}
+.formDiv5 {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formDiv5 > button {
+  background-color: #bb071bff;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 0.5rem 4rem;
+  border-radius: 10px;
+  font-family: "Tektur", cursive, sans-serif;
+  font-weight: 500;
+  transition: 150ms ease-in-out;
+}
+
+.formDiv5 > button:hover {
+  background-color: rgb(161, 4, 22);
+  transform: scale(0.97);
+}
+
+.contactInfo {
+  width: 35%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../public/assets/images/img_1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.contactInfoDivs {
+  width: 100%;
+  height: 10%;
+}
+
+.contactInfoDiv1 {
+  margin-top: 3rem;
+}
+
+.contactInfoDiv1 > span {
+  font-family: "Russo One", sans-serif;
+  font-size: 2.1rem;
+  padding-left: 2rem;
+}
+
+.contactInfoDiv2,
+.contactInfoDiv3 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.contactInfoDiv2 > i,
+.contactInfoDiv3 > i {
+  font-size: 3rem;
+}
+
+.contactInfoDiv2 > span,
+.contactInfoDiv3 > span {
+  font-size: 1.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactInfoDiv4 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 3rem;
+  margin-top: 2rem;
+}
+
+.contactInfoDiv4 > a:nth-child(1) > i {
+  font-size: 3.2rem;
+  color: #0a66c2ff;
+}
+
+.contactInfoDiv4 > a:nth-child(2) > i {
+  font-size: 3.2rem;
+  background: linear-gradient(30deg, #f8c900, #f94c00ff, #c22773ff, #8039b1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (width < 800px) {
+  .contactContainer {
+    height: 75rem;
+  }
+
+  .formContainer {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .formContainer > form {
+    width: 100%;
+    height: 40rem;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 9rem;
+  }
+
+  .contactInfo {
+    width: 100%;
+    height: 24rem;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .contactInfoDivs {
+    margin-top: 3rem;
+  }
+}
+
+@media (width < 651px) {
+  .contactContainer {
+    padding: 0rem 0.5rem;
+  }
+  .formContainer {
+    width: 100%;
+  }
+}
+
+/* @media (width < 500px) {
+  .contactContainer {
+    min-height: 120vh;
+  }
+} */

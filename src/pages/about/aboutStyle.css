@@ -1,0 +1,166 @@
+.aboutContainer {
+  min-height: 70rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #141414ff;
+}
+
+.aboutDiv1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.aboutDiv1 p {
+  width: 80%;
+  font-size: 2.5rem;
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 1px;
+}
+
+.aboutDiv1 span {
+  opacity: 0.5;
+}
+
+.aboutDiv2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(165, 231, 0);
+}
+
+.aboutCube {
+  width: 50rem;
+  height: 50rem;
+}
+
+.slideshowEffect {
+  width: 100%;
+  /* height: 50rem; */
+}
+
+.slideShowSlides {
+  width: 40rem;
+  height: 40rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (width < 1271px) {
+  .aboutDiv1 p {
+    width: 90%;
+    font-size: 2.1rem;
+    line-height: 2.9rem;
+  }
+  .aboutCube {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media (width < 981px) {
+  .aboutDiv1 p {
+    width: 95%;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+  .aboutCube {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (width < 901px) {
+  .aboutContainer {
+    height: 150vh;
+    min-height: 105rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutDiv1 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .aboutDiv1 p {
+    width: 70%;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+  }
+
+  .aboutDiv2 {
+    width: 100%;
+    height: 50%;
+    background-color: #141414ff;
+  }
+}
+
+@media (width < 751px) {
+  .aboutDiv1 p {
+    width: 80%;
+    font-size: 2.2rem;
+  }
+  .slideShowSlides {
+    width: 35rem;
+    height: 35rem;
+  }
+}
+
+@media (width < 551px) {
+  .aboutContainer {
+    height: 130vh;
+  }
+  .aboutDiv1 {
+    height: 60%;
+    padding-top: 3rem;
+  }
+  .aboutDiv2 {
+    height: 40%;
+    background-color: #141414ff;
+  }
+
+  .aboutDiv1 p {
+    width: 90%;
+    font-size: 2rem;
+  }
+  .slideShowSlides {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (width < 451px) {
+  .aboutDiv1 p {
+    width: 90%;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  .slideShowSlides {
+    width: 28rem;
+    height: 28rem;
+  }
+}
+
+@media (width < 420px) {
+  .aboutDiv1 {
+    padding-top: 4rem;
+  }
+  .aboutDiv2 {
+    padding-bottom: 4rem;
+  }
+}
