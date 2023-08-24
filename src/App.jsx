@@ -6,7 +6,7 @@ import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 const App = () => {
   return (
-    <Main basename="/New_Portfolio">
+    <Main>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Project" element={<Project />} />
